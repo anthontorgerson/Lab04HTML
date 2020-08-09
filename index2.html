@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>HTML Demo</title>
+      <link rel="stylesheet" href="style.css">
+        <!-- Here is another example of something you should not do, which is to add styles into the head for rendering to the page -->
+        <style>
+         body{
+            background-color: rgb(83, 160, 160);
+         }
+        </style>
+   </head>
+   <!-- This is how in html we create comments -->
+   <body>
+      <header>
+         <h1>Choose your favorite pizza!</h1>
+         <nav>
+            <ul>
+               <!-- Inline styles are bad practice and developers should not use this method of styling -->
+               <li><a style="background-color: azure; color:blue;" href="index.html">Home Page</a></li>
+               <li><a href="index2.html">Index Two Page</a></li>
+               <li><a href="https://github.com/DelvaVCode/102-SelfPaced">DeltaV GitHub Page</a></li>
+               <li><a href="http://www.mypapavitos.com/location/waterloo/">Papa Vitos!</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <img src="http://placehold.it/960x450">
+         <ul>
+            <li> <img src="http://placehold.it/300x200"></li>
+            <li><img src="http://placehold.it/300x200"></li>
+            <!-- use border box -->
+            <li><img src="http://placehold.it/300x200"></li>
+         </ul>
+      </main>
+      <footer>
+         <p>
+            <b>
+               <i>&#169;</i>
+            </b>
+         </p>
+      </footer>
+   </body>
+</html>
