@@ -11,33 +11,19 @@
     </head>
     <body>
       <header>
-         <h1>Choose your favorite pizza!</h1>
+         <h1 id="removeThis">Choose your favorite pizza!</h1>
+         <script src="app.js"></script>
          <nav>
             <ul>
-               <li><a href="index.html">Home Page</a></li>
+                <!-- Inline styles are bad practice and developers should not use this method of styling -->
+                <li><a style="background-color: azure; color:blue;" href="index.html">Home Page</a></li>
                <li><a href="index2.html">Index Two Page</a></li>
                <li><a href="https://github.com/DelvaVCode/102-SelfPaced">DeltaV GitHub Page</a></li>
                <li><a href="http://www.mypapavitos.com/location/waterloo/">Papa Vitos!</a></li>
             </ul>
          </nav>
       </header>
-      <main>
-         <img id="topSpace" src="http://placehold.it/960x450">
-         <h2>The various pizzas</h2>
-         <ul>
-            <li class="addMargin"><img class="pizzaImageSize" src="images/papavitospizza.jpg" alt="Pizza from Papa Vitos"></li>
-            <li><img class="pizzaImageSize" src="images/cheesypizza.jpg" alt="Pizza from Little Caesars"></li>
-            <li><img class="pizzaImageSize" src="images/pizzahutpizza.jpg" alt="Pizza from Pizza Hut"></li>
-            <li><img class="pizzaImageSize" src="images/pizzaranchpizza.jpg" alt="Pizza from Pizza Ranch"></li>
-            <li><img class="pizzaImageSize" src="images/fongspizza.jpg" alt="Pizza from Fongs Pizza"></li>
-            <li><img class="pizzaImageSize" src="images/peepspizza.jpg" alt="Pizza from a Crazy Person"></li>
-         </ul>
-      </main>
-      <footer>
-         <p>To find out more, click button!</p>
-         <button>Click Here</button>
-      </footer>
-        <div id="bart">
+      <div id="bart">
          <div class="head">
              <div class="no-border body hair hair1"></div>
              <div class="no-border body hair hair2"></div>
@@ -91,6 +77,23 @@
              <div class="no-border mouth-smile"></div>
          </div>
      </div>
-     <script src="app.js"></script>
+      <main>
+         <img id="topSpace" src="http://placehold.it/960x450">
+         <h2>The various pizzas</h2>
+         <ul>
+            <li class="addMargin"><img class="pizzaImageSize" src="images/papavitospizza.jpg" alt="Pizza from Papa Vitos"></li>
+            <li><img class="pizzaImageSize" src="images/cheesypizza.jpg" alt="Pizza from Little Caesars"></li>
+            <li><img class="pizzaImageSize" src="images/pizzahutpizza.jpg" alt="Pizza from Pizza Hut"></li>
+            <li><img class="pizzaImageSize" src="images/pizzaranchpizza.jpg" alt="Pizza from Pizza Ranch"></li>
+            <li><img class="pizzaImageSize" src="images/fongspizza.jpg" alt="Pizza from Fongs Pizza"></li>
+            <li><img class="pizzaImageSize" src="images/peepspizza.jpg" alt="Pizza from a Crazy Person"></li>
+         </ul>
+      </main>
+   <script>document.write('<h3 style="clear:both;">These pizzas look good</h3>');</script>
+      <footer>
+         <p>To find out more, click button!</p>
+         <button>Click Here</button>
+      </footer>
+      <script src="appTwo.js"></script>
     </body>
 </html>
