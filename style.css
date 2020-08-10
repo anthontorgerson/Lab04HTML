@@ -20,7 +20,7 @@ body{
 
 header {
     margin-top: 15px;
-    background-color: rgb(16, 96, 175);
+    background-color: hsla(211, 100%, 70%, 0.75)
     height: 200px;
 }
 
