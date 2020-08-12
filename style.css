@@ -7,6 +7,10 @@
         rgb = (red  green  blue) ; */
 }
 
+#greeting-placeholder {
+    color: yellow;
+    }
+
 body{
     width: 960px;
     margin: 0 auto;
