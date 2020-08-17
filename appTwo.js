@@ -34,9 +34,56 @@ if(hourNow >= 18 && hourNow <= 24){
 }
 
 
-
 document.getElementById('greeting-placeholder').textContent = greeting;
 
 
 var header = document.getElementById('removeThis');
 header.remove();
+
+
+var howMany = function() {
+    var count = prompt('How many pizzas do you want to order?');
+  
+    while( count === '' || isNaN(count) ) {
+      count = prompt('Please enter a number. How many do you want?');
+    }
+  
+    console.log(typeof number);
+    console.log('howMany():', Number(count));
+    return Number(count);
+  }
+  
+  var getItem = function() {
+    var order = prompt('What kind would you like to order? Cheese or Pepperoni?').toLowerCase;
+    var item;
+  
+    while (order !== 'cheese' && order !== 'pepperoni') {
+      order = prompt('Please enter "cheese" or "pepperoni"...');
+    }
+  
+    if (order === 'cheese') {
+      item = '<img class="pizzaImageSize" src="Images/cheesypizza.jpg">';
+    } else if (order === 'pepperoni') {
+      item = '<img class="pizzaImageSize" src="Images/pizzahutpizza.jpg">';
+    }
+  
+    console.log('getItem():', item);
+
+    document.write(item);
+    return item;
+  }
+  
+  var showOrder = function() {
+  
+    for(var i = 0; i < total; i++) {
+      result = result + '<p>Model #' + i + ' ' + item + '</p>';
+    }
+  
+    console.log('showOrder():', result)
+    return result;
+  }
+
+  howMany();
+  getItem();
+  showOrder();
+
