@@ -10,9 +10,31 @@ var today = new             Date();
 //allow to take the today variable and output to page.
 var userName = prompt('Please enter your first name');
 
-alert('Hello, ' + userName + ' click OK to proceed.');
+var favColor = prompt('Hello, ' + userName + ' what is your favorite color?');
 
+var colorReply;
 
+if(favColor === "blue"){
+    colorReply = alert('Nice ' + userName + ', oceans are blue.');
+
+}   else if(favColor === "red"){
+    colorReply = alert('Nice ' + userName + ', apples are red.');
+
+}   else if(favColor === "green"){
+    colorReply = alert('Nice ' + userName + ', grass is green.');
+
+}   else if(favColor === "yellow"){
+    colorReply = alert('Nice ' + userName + ', the sun is yellow.');
+
+}   else if(favColor === "orange"){
+    colorReply = alert('Nice ' + userName + ', oranges are orange.');
+
+}   else if(favColor === "purple"){
+    colorReply = alert('Nice ' + userName + ', grapes are purple.');
+
+}   else {
+    colorReply = alert('Something went wrong. ¯\_(ツ)_/¯')
+}
 
 var now = new Date();
 var hourNow = now.getHours();
