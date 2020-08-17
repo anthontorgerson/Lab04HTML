@@ -16,21 +16,27 @@ var colorReply;
 
 if(favColor === "blue"){
     colorReply = alert('Nice ' + userName + ', oceans are blue.');
+    document.body.style.backgroundColor = "blue";
 
 }   else if(favColor === "red"){
     colorReply = alert('Nice ' + userName + ', apples are red.');
+    document.body.style.backgroundColor = "red";
 
 }   else if(favColor === "green"){
     colorReply = alert('Nice ' + userName + ', grass is green.');
+    document.body.style.backgroundColor = "green";
 
 }   else if(favColor === "yellow"){
     colorReply = alert('Nice ' + userName + ', the sun is yellow.');
+    document.body.style.backgroundColor = "yellow";
 
 }   else if(favColor === "orange"){
     colorReply = alert('Nice ' + userName + ', oranges are orange.');
+    document.body.style.backgroundColor = "orange";
 
 }   else if(favColor === "purple"){
     colorReply = alert('Nice ' + userName + ', grapes are purple.');
+    document.body.style.backgroundColor = "purple";
 
 }   else {
     colorReply = alert('Something went wrong. ¯\_(ツ)_/¯')
@@ -76,10 +82,10 @@ var howMany = function() {
   }
   
   var getItem = function() {
-    var order = prompt('What kind would you like to order? Cheese or Pepperoni?').toLowerCase;
+    var order = prompt('What kind would you like to order? Cheese or Pepperoni?').toLowerCase();
     var item;
   
-    while (order !== 'cheese' && order !== 'pepperoni') {
+    while(order !== 'cheese' && order !== 'pepperoni') {
       order = prompt('Please enter "cheese" or "pepperoni"...');
     }
   
